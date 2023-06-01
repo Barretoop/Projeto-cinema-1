@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(74, 164, 238);
+  background: linear-gradient(
+    90deg,
+    rgba(74, 164, 238, 1) 0%,
+    rgba(74, 190, 238, 1) 35%,
+    rgba(65, 122, 124, 1) 100%
+  );
+}
+
+.container {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(74, 164, 238);
+  background: linear-gradient(
+    90deg,
+    rgba(74, 164, 238, 1) 0%,
+    rgba(74, 190, 238, 1) 35%,
+    rgba(65, 122, 124, 1) 100%
+  );
+  padding: 1rem;
+}
+
+.form-image img {
+  width: 31rem;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 3rem;
+}
+
+.form-header {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #5bb4ff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+} */
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  font-weight: 400;
+  border: none;
+  font-size: 17px;
+  color: #32324f;
+  background-color: #ecf2f7;
+  border-radius: 5px;
+  margin-bottom: 1.1rem;
+}
+
+.gender-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.62rem;
+  padding: 0 0.5rem;
+}
+
+.gender-input {
+  display: flex;
+  align-items: center;
+}
+
+.gender-input input {
+  margin-right: 0.35rem;
+}
+
+.gender-input label {
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.input-box input[type="submit"] {
+  background: #4aa4ee;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1330px) {
+  .form-image {
+    display: none;
+  }
+  .container {
+    width: 50%;
+  }
+  .form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1064px) {
+  .container {
+    width: 90%;
+    height: auto;
+  }
+  .input-group {
+    flex-direction: column;
+    z-index: 5;
+    padding-right: 5rem;
+    max-height: 10rem;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+  }
+  .gender-inputs {
+    margin-top: 2rem;
+  }
+  .gender-group {
+    flex-direction: column;
+  }
+  .gender-title h6 {
+    margin: 0;
+  }
+  .gender-input {
+    margin-top: 0.5rem;
+  }
+}

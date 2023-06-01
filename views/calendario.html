@@ -1,0 +1,70 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendario</title>
+  <link rel="stylesheet" href="/assets/css/calendario.css">
+  <script src="/assets/js/calendario.js" defer></script>
+  <header>
+    <nav>
+      <a class="logo" href="/">UNIHELPER</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#">Calendário</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li><a href="/views/tarefas.html">Tabela de tarefas</a></li>
+        <li><a href="#">Ajuda</a></li>
+      </ul>
+    </nav>
+</head>
+
+<body>
+  <div class="contianer">
+    <div class="calendar">
+      <div class="calendar-header">
+        <span class="month-picker" id="month-picker"> Maio </span>
+        <div class="year-picker" id="year-picker">
+          <span class="year-change" id="pre-year">
+            <pre><</pre>
+          </span>
+          <span id="year">2023</span>
+          <span class="year-change" id="next-year">
+            <pre>></pre>
+          </span>
+        </div>
+      </div>
+
+      <div class="calendar-body">
+        <div class="calendar-week-days">
+          <div>Dom</div>
+          <div>Seg</div>
+          <div>Ter</div>
+          <div>Qua</div>
+          <div>Qui</div>
+          <div>Sex</div>
+          <div>Sab</div>
+        </div>
+        <div class="calendar-days">
+        </div>
+      </div>
+      <div class="calendar-footer">
+      </div>
+      <div class="date-time-formate">
+        <div class="day-text-formate">Hoje</div>
+        <div class="date-time-value">
+          <div class="time-formate">02:51:20</div>
+          <div class="date-formate">16 - Maio - 2023</div>
+        </div>
+      </div>
+      <div class="month-list"></div>
+    </div>
+  </div>
+</body>
+
+</html>
